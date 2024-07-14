@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Fondo general */
+    color: #333; /* Color de texto principal */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1200px; /* Ancho máximo de 1200px */
+}
+
+/* Estilos del header */
+.header {
+    background-color: #292b2c; /* Fondo del header */
+    color: #fff; /* Color de texto del header */
+    padding: 20px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icono {
+    width: 30px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fab700; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos del contenido del header */
+.header-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 15px;
+    background-color: #fab700; /* Color de fondo del botón */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #f0a500; /* Cambio de color al pasar el mouse */
+}
+
+.btn-reserva {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #292b2c; /* Color de fondo del botón */
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fab700; /* Borde del botón */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-reserva:hover {
+    background-color: #fab700; /* Cambio de color al pasar el mouse */
+    color: #292b2c;
+}
+
+/* Estilos de la sección de servicios */
+.services {
+    background-color: #fff; /* Fondo de la sección */
+    padding: 80px 0;
+}
+
+.services-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.services-content h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services-1 {
+    width: 300px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.services-1:hover {
+    transform: translateY(-5px); /* Efecto de levantar ligeramente al pasar el mouse */
+}
+
+.services-1 img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.services-1 h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.services-1 p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Estilos de la sección "Acerca de Nosotros" */
+.about {
+    background-color: #f9f9f9; /* Fondo de la sección */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+/* Estilos de la sección del blog */
+.blog {
+    background-color: #fff; /* Fondo de la sección */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.blog-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.blog-1 {
+    width: 300px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.blog-1 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-1 h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.blog-1 p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Estilos de la sección de contacto */
+.contact {
+    background-color: #292b2c; /* Fondo de la sección */
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    display: none; /* Ocultar inicialmente */
+    border-radius: 10px;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #fab700; /* Color de fondo del botón */
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button[type="submit"]:hover {
+    background-color: #f0a500; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #333; /* Fondo del footer */
+    color: #fff;
+    padding: 80px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-link h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.footer-link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-link ul li {
+    margin-bottom: 10px;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-link ul li a:hover {
+    color: #fab700; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background: #f8f9fa;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.header-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.header-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-1:hover {
+    background-color: #555;
+}
+
+.services {
+    background: #f1f1f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.services-1 {
+    flex: 1 1 23%; /* Ajustar el ancho de las columnas */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.services-1 img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.services-1 h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.services-1 p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.blog {
+    background: #f1f1f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.blog p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.blog-1 {
+    flex: 1 1 30%; /* Ajustar el ancho de las columnas */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog-1 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.blog-1 h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.blog-1 p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .link {
+    flex: 1 1 25%; /* Ajustar el ancho de las columnas */
+    margin-bottom: 20px;
+}
+
+.footer .link h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer .link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .link ul li {
+    margin-bottom: 10px;
+}
+
+.footer .link ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer .link ul li a:hover {
+    color: #aaa;
+}
